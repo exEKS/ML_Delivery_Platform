@@ -1,0 +1,47 @@
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Test, lint and type-check caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDE settings
+.idea/
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local MLflow and generated artifacts
+mlruns/
+artifacts/
+
+# Downloaded/generated datasets
+data/raw/
+data/processed/
+
+# Private tutor and learning context
+/TUTOR.md
+/docs/career-plan.md
+/docs/current-state.md
+/docs/learning-progress.md
+/docs/session-log/

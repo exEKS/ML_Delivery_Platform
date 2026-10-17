@@ -1,0 +1,2 @@
+# Markdown permits two trailing spaces as an explicit line break.
+*.md text eol=lf whitespace=-blank-at-eol
