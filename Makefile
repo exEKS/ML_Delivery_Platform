@@ -13,10 +13,10 @@ lint:
 	uv run ruff check .
 
 typecheck:
-	uv run mypy packages/platform_contracts/src/platform_contracts packages/platform_contracts/tests
+	uv run mypy packages/platform_contracts/src/platform_contracts packages/platform_contracts/tests examples/credit_default
 
 test-unit:
-	uv run pytest packages/platform_contracts/tests -q
+	uv run python -m pytest packages/platform_contracts/tests examples/credit_default/tests -q
 
 check: lint format-check typecheck test-unit
 
