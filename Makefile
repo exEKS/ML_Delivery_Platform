@@ -1,4 +1,4 @@
-.PHONY: bootstrap format format-check lint typecheck test-unit check fix
+.PHONY: bootstrap format format-check lint typecheck test-unit check fix seed-demo train-baseline
 
 bootstrap:
 	uv sync --all-packages
@@ -23,3 +23,10 @@ check: lint format-check typecheck test-unit
 fix:
 	uv run ruff check . --fix
 	uv run ruff format .
+
+seed-demo:
+	uv run python -m examples.credit_default.ingest
+	uv run python -m examples.credit_default.split
+
+train-baseline:
+	uv run python -m examples.credit_default.train

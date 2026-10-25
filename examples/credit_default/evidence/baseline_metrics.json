@@ -1,0 +1,50 @@
+{
+  "algorithm": "logistic_regression",
+  "feature_count": 23,
+  "features": [
+    "sex",
+    "education",
+    "marriage",
+    "pay_0",
+    "pay_2",
+    "pay_3",
+    "pay_4",
+    "pay_5",
+    "pay_6",
+    "limit_bal",
+    "age",
+    "bill_amt1",
+    "bill_amt2",
+    "bill_amt3",
+    "bill_amt4",
+    "bill_amt5",
+    "bill_amt6",
+    "pay_amt1",
+    "pay_amt2",
+    "pay_amt3",
+    "pay_amt4",
+    "pay_amt5",
+    "pay_amt6"
+  ],
+  "seed": 42,
+  "splits": {
+    "test": {
+      "average_precision": 0.5391680088111095,
+      "brier_score": 0.1381139814006941,
+      "roc_auc": 0.7602155196126974,
+      "rows": 4500
+    },
+    "train": {
+      "average_precision": 0.554608662716902,
+      "brier_score": 0.13446772414819033,
+      "roc_auc": 0.7747037195118138,
+      "rows": 21000
+    },
+    "validation": {
+      "average_precision": 0.5249451758634943,
+      "brier_score": 0.13840394489865385,
+      "roc_auc": 0.7655418318410885,
+      "rows": 4500
+    }
+  }
+}

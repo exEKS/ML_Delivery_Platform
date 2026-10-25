@@ -7,6 +7,13 @@ dependencies = []
 [tool.uv]
 default-groups = ["dev", "credit-default"]
 
+[[tool.mypy.overrides]]
+module = [
+    "sklearn",
+    "sklearn.*",
+]
+ignore_missing_imports = true
+
 [tool.uv.workspace]
 members = [
     "packages/platform_contracts",
@@ -17,6 +24,7 @@ credit-default = [
     "pandas>=3.0.6",
     "pandera[pandas]>=0.34.1",
     "pyarrow>=26.0.0",
+    "scikit-learn>=1.9.1",
     "xlrd>=2.0.2",
 ]
 dev = [
